@@ -1,0 +1,108 @@
+.card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    .card__top__content {
+        width: 400px;
+        height: auto;
+        padding: 20px;
+        border-radius: 16px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 24px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        .card__top__content__text {
+            font-size: 24px;
+            color: dodgerblue;
+            font-weight: 700;
+        }
+
+        .card__top__content__form {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            gap: 16px;
+
+            .card__top__content__user__data {
+                width: 100%;
+                height: 48px;
+                font-size: 18px;
+                color: grey;
+                padding: 0px 16px;
+                border-radius: 12px;
+                outline: none;
+                background: none;
+                border: 1px solid gray;
+            }
+
+            .card__top__content__form__btn {
+                width: 100%;
+                height: 42px;
+                background: green;
+                border-radius: 12px;
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                border: 3px solid transparent;
+
+                &:hover {
+                    background: none;
+                    color: green;
+                    border-color: green;
+                }
+            }
+        }
+    }
+
+    .card__data__content {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+
+        .card__data__content__loading{
+            font-size: 48px;
+            color: grey;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .card__data__content__card {
+            height: auto;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+            .card__data__content__image__box {
+                max-width: 240px;
+                width: 100%;
+                height: 220px;
+                border-radius: 16px;
+
+                .card__data__content__image {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+}
