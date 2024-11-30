@@ -103,6 +103,46 @@
                     border-radius: 16px;
                 }
             }
+            .card__data__content__card__group{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .card__data__content__card__group__delete{
+                    width: 60px;
+                    height: 50px;
+                    border-radius: 6px;
+                    background: red;
+                    color: white;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid transparent;
+                    &:hover{
+                        background: none;
+                        color: red;
+                        border-color: red;
+                    }
+                } 
+                .card__data__content__card__group__edit{
+                    width: 60px;
+                    height: 50px;
+                    border-radius: 6px;
+                    background: gold;
+                    color: white;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid transparent;
+                    &:hover{
+                        background: none;
+                        color: gold;
+                        border-color: gold;
+                    }
+                }   
+            }
         }
     }
 }

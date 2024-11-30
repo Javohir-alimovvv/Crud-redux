@@ -19,16 +19,25 @@ export const productApi = api.injectEndpoints({
     }),
     deletAlimovapi: build.mutation({
       query: (id) => ({
-        url: `/alimovapi${id}`,
+        url: `/alimovapi/${id}`,
         method: "DELETE"
+      }),
+      invalidatesTags: ["Alimovapi"]
+    }),
+    editAlimovapi: build.mutation({
+      query: ({ id, ...body }) => ({
+        url: `/alimovapi/${id}`,
+        method: 'PUT',
+        body
       }),
       invalidatesTags: ["Alimovapi"]
     })
   }),
 });
 
-export const { 
+export const {
   useGetProductsQuery,
   useCreateAlimovaliMutation,
-  useDeletAlimovapiMutation
+  useDeletAlimovapiMutation,
+  useEditAlimovapiMutation
 } = productApi;
